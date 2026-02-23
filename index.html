@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thakur's Technology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar">
+  <div class="logo">
+    <div class="logo-frame">
+      <img src="assets/logo.jpg" alt="logo">
+    </div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+
+
+<!-- <nav class="navbar">
+ <div class="logo">
+  <div class="logo-frame">
+    <img src="assets/logo.jpg" alt="logo">
+  </div>
+ </div>
+ <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+ </ul>
+</nav> -->
+
+
+<section id="home" class="hero">
+ <video autoplay muted loop class="bg-video">
+  <source src="assets/bg.mp4" type="video/mp4">
+ </video>
+ <div class="hero-content">
+  <h1>THAKUR'S TECHNOLOGY</h1>
+  <h3>Finding Solutions</h3>
+ </div>
+</section>
+
+<!-- <section id="about" class="section glass">
+ <h2>About Us</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Established 2025. Providing technical solution.</p>
+</section> -->
+
+
+<section id="about" class="section glass reveal">
+
+  <h2>About Us</h2>
+
+  <div class="about-row reveal-left">
+      <div class="about-title">About Thakur's Technology</div>
+        <div class="about-desc">
+            <p>Founded in 2025 by Shivam Kumar Thakur, Thakur's Technology is a fast-growing IT solutions startup based in Jharsuguda, Odisha, India, committed to empowering businesses and individuals with reliable, scalable, and innovative digital solutions.</p>
+            <p>With the belief that technology should act as a growth partner rather than a complexity, we aim to provide a helping hand to startups, businesses, educational institutions, and individuals who are striving to establish and expand their presence in this ever-evolving tech-savvy world.</p>
+            <p>At Thakur's Technology, we specialize in delivering customized technology solutions tailored to the unique needs of our clients — ensuring that their digital infrastructure not only supports their business operations but also enhances productivity, efficiency, and long-term growth.</p>
+        </div>
+  </div>
+
+  <div class="about-row reverse reveal-right">
+      <div class="about-title">Our Mission</div>
+      <div class="about-desc">
+          <p>Our mission is to enable businesses of all sizes to leverage modern technology for sustainable growth by providing end-to-end digital solutions that simplify operations, enhance performance, and unlock new opportunities for innovation.</p>
+          <p>We are dedicated to supporting our clients at every stage of their digital journey by offering practical, cost-effective, and scalable technological solutions for business enhancement.</p>
+      </div>
+  </div>
+
+  <div class="about-row reveal-left">
+      <div class="about-title">Our Vision</div>
+      <div class="about-desc">
+          <p>Our vision is to grow into a multi-domain technology organization that not only provides IT services but also develops indigenous digital products such as India's own software platforms, social media ecosystems, operating systems, and enterprise-grade business solutions.</p>
+          <p>We aspire to contribute towards building a self-reliant digital future by developing innovative technologies that can serve businesses and communities at both national and global levels.</p>
+      </div>
+  </div>
+
+  <div class="about-row reverse reveal-right">
+      <div class="about-title">Our Core Values</div>
+      <div class="about-desc">
+          <p>At the heart of our organization lie two fundamental principles:</p>
+          <ul>
+              <li>Transparency – We believe in maintaining clear and honest communication with our clients throughout every stage of project development.</li>
+              <li>Client-First Approach – Our clients’ success is our priority, and every solution we build is designed to deliver measurable value to their business.</li>
+          </ul>
+          
+      </div>
+  </div>
+
+  <div class="about-row reveal-left">
+      <div class="about-title">Our Future Goals</div>
+      <div class="about-desc">As a startup, we are continuously evolving and expanding our capabilities to venture into new technological domains. Our long-term goal is to develop innovative software products and digital platforms that can redefine the way businesses operate and connect in the digital age.</div>
+  </div>
+
+</section>
+
+
+<section id="services" class="section reveal">
+ <h2>Services</h2>
+ <div class="cards">
+
+  <div class="card reveal">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" />
+    <p>Website Development</p>
+  </div>
+
+  <div class="card reveal">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" />
+    <p>Android App Development</p>
+  </div>
+
+  <div class="card reveal">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" />
+    <p>Web App Development</p>
+  </div>
+
+  <div class="card reveal">
+    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998" />
+    <p>Software Solutions</p>
+  </div>
+
+  <div class="card reveal">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" />
+    <p>Maintenance & Support</p>
+  </div>
+
+ </div>
+</section>
+
+
+
+<section id="contact" class="section glass reveal">
+ <form id="contactForm" class="contact-box">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="text" id="phone" placeholder="Phone Number" required>
+
+  <select id="service">
+   <option>Website Development</option>
+   <option>Android App Development</option>
+   <option>Web App Development</option>
+   <option>Software Solutions</option>
+   <option>Maintenance & Support</option>
+   <option>Others</option>
+  </select>
+
+  <textarea id="concern" placeholder="Write your requirement / concern here..."></textarea>
+  <input type="number" id="budget" placeholder="Budget">
+  <input type="date" id="deadline">
+
+  <button type="submit">Submit</button>
+ </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>Thakur's Technology</h2>
+      <h5>Providing Technical Solutions Since 2025</h5>
+    </div>
+
+    <div class="footer-center">
+      <p>© 2026 All Rights Reserved</p>
+    </div>
+
+    <div class="footer-right">
+      
+      <p>Address: Shanti Nagar, Kalimandir Road, Jharsuguda, Odisha, India</p>
+      <p>Email: thakurstechnology.2025@gmail.com</p>
+      <!-- <p>Phone: +91-XXXXXXXXXX</p> -->
+    </div>
+  </div>
+</footer>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+</script>
+
+<script>
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(
+    ".reveal, .reveal-left, .reveal-right"
+  );
+
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const visiblePoint = 100;
+
+    if (elementTop < windowHeight - visiblePoint) {
+      element.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+</body>
+</html>

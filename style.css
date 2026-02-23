@@ -1,0 +1,382 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-h: 70px;
+  --glass-bg: rgba(255,255,255,0.05);
+  --primary: cyan;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #020617;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo-frame {
+  width: clamp(40px, 5vw, 56px);
+  height: clamp(40px, 5vw, 56px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 12px var(--primary);
+}
+
+.logo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 14px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  box-shadow: 0 0 10px var(--primary);
+  border-radius: 8px;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: var(--nav-h);
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: clamp(28px, 6vw, 64px);
+  text-shadow: 0 0 20px blue;
+}
+
+.hero-content h3 {
+  font-size: clamp(20px, 5vw, 50px);
+  text-shadow: 0 0 20px red;
+}
+
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+
+.section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  margin: 40px;
+  border-radius: 20px;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+
+.about-row {
+  display: flex;
+  gap: 30px;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-title {
+  flex: 1;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--primary);
+}
+
+.about-desc {
+  flex: 2;
+  background: var(--glass-bg);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* ============================= */
+/* SERVICES */
+/* ============================= */
+
+.cards {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background: var(--glass-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+/* ============================= */
+/* CONTACT */
+/* ============================= */
+
+.contact-box {
+  background: var(--glass-bg);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background: var(--primary);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+  background: black;
+  padding: 30px;
+  border-top: 1px solid var(--primary);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-row,
+  .about-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: var(--nav-h);
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 100px 20px;
+  }
+
+}
+
+
+
+/* ============================= */
+/* SMOOTH NAV ANIMATION */
+/* ============================= */
+
+.nav-links {
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+}
+
+.nav-links.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Smooth slide from right */
+@media (max-width: 992px) {
+  .nav-links {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* ============================= */
+/* HAMBURGER TO X ANIMATION */
+/* ============================= */
+
+.hamburger span {
+  transition: all 0.4s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ============================= */
+/* SCROLL REVEAL ANIMATIONS */
+/* ============================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left reveal */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s ease;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right reveal */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
