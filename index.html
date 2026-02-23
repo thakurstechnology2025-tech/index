@@ -146,10 +146,52 @@
  </div>
 </section>
 
-
-
 <section id="contact" class="section glass reveal">
- <form id="contactForm" class="contact-box">
+  <div>
+    <h2>Contact Us</h2>
+  </div>
+
+  <div>
+    <form id="contactForm" class="contact-box">
+      
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+
+      <select id="service" required>
+        <option value="" disabled selected>Choose your service</option>
+        <option>Website Development</option>
+        <option>Android App Development</option>
+        <option>Web App Development</option>
+        <option>Software Solutions</option>
+        <option>Maintenance & Support</option>
+        <option>Others</option>
+      </select>
+
+      <textarea id="concern" placeholder="Write your requirement / concern here..."></textarea>
+      <input type="number" id="budget" placeholder="Budget">
+
+      <div class="date-field">
+        <input type="text" id="deadline" placeholder="Enter your deadline (dd-mm-yyyy)" required>
+        <span class="calendar-icon">📅</span>
+      </div>
+
+      <!-- hidden real date picker -->
+      <input type="date" id="realDate" style="display:none;">
+
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</section>
+
+<!-- <section id="contact" class="section glass reveal">
+  <div>
+    <h2>Contact Us</h2>
+  </div>
+  <div>
+  <form id="contactForm" class="contact-box">
   <input type="text" id="name" placeholder="Full Name" required>
   <input type="email" id="email" placeholder="Email" required>
   <input type="text" id="phone" placeholder="Phone Number" required>
@@ -168,8 +210,9 @@
   <input type="date" id="deadline">
 
   <button type="submit">Submit</button>
+  </div>
  </form>
-</section>
+</section> -->
 
 <footer class="footer">
   <div class="footer-container">
@@ -230,6 +273,32 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+</script>
+
+
+<script>
+const realDate = document.getElementById("realDate");
+const displayDate = document.getElementById("deadline");
+const icon = document.querySelector(".calendar-icon");
+
+// open picker when clicking input or icon
+displayDate.addEventListener("click", () => realDate.showPicker());
+icon.addEventListener("click", () => realDate.showPicker());
+
+// set minimum date = today
+const today = new Date().toISOString().split("T")[0];
+realDate.min = today;
+
+// format date when selected
+realDate.addEventListener("change", () => {
+  const date = new Date(realDate.value);
+  const formatted =
+    ("0" + date.getDate()).slice(-2) + "-" +
+    ("0" + (date.getMonth()+1)).slice(-2) + "-" +
+    date.getFullYear();
+
+  displayDate.value = formatted;
+});
 </script>
 
 </body>
