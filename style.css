@@ -379,4 +379,34 @@ button {
 .reveal-right.active {
   opacity: 1;
   transform: translateX(0);
+
+}
+
+
+
+
+/* ============================= */
+/* DATE SECTION */
+/* ============================= */
+
+.date-field {
+  position: relative;
+  width: 100%;
+}
+
+.date-field input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
 }
