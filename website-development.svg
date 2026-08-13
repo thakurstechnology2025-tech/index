@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F7FF"></stop>
+      <stop offset="100%" stop-color="#FFFFFF"></stop>
+    </linearGradient>
+
+    <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"></stop>
+      <stop offset="100%" stop-color="#0EA5E9"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A00"></stop>
+      <stop offset="100%" stop-color="#FFB347"></stop>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity="0.2"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg)"></rect>
+
+  <!-- Decorative Shapes -->
+  <circle cx="180" cy="140" r="70" fill="#FF8A00" opacity="0.15"></circle>
+  <circle cx="1030" cy="120" r="90" fill="#38BDF8" opacity="0.15"></circle>
+  <circle cx="1080" cy="650" r="120" fill="#FF8A00" opacity="0.08"></circle>
+
+  <!-- Laptop -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="160" width="640" height="380" rx="22" fill="#1E293B"></rect>
+    <rect x="305" y="185" width="590" height="330" rx="15" fill="url(#screen)"></rect>
+
+    <!-- Browser Header -->
+    <rect x="305" y="185" width="590" height="45" rx="15" fill="#FFFFFF" opacity="0.95"></rect>
+
+    <circle cx="335" cy="208" r="7" fill="#FF5F56"></circle>
+    <circle cx="360" cy="208" r="7" fill="#FFBD2E"></circle>
+    <circle cx="385" cy="208" r="7" fill="#27C93F"></circle>
+
+    <!-- Code Window -->
+    <rect x="340" y="260" width="250" height="180" rx="12" fill="#FFFFFF" opacity="0.95"></rect>
+
+    <text x="365" y="305" font-size="28" fill="#FF8A00" font-family="Arial">&lt;/&gt;</text>
+
+    <line x1="365" y1="335" x2="520" y2="335" stroke="#38BDF8" stroke-width="8"></line>
+
+    <line x1="365" y1="365" x2="500" y2="365" stroke="#94A3B8" stroke-width="8"></line>
+
+    <line x1="365" y1="395" x2="530" y2="395" stroke="#94A3B8" stroke-width="8"></line>
+
+    <!-- Website Mockup -->
+    <rect x="630" y="260" width="220" height="180" rx="12" fill="#FFFFFF" opacity="0.95"></rect>
+
+    <rect x="650" y="280" width="180" height="25" rx="5" fill="url(#accent)"></rect>
+
+    <rect x="650" y="325" width="80" height="80" rx="8" fill="#38BDF8" opacity="0.8"></rect>
+
+    <rect x="745" y="325" width="85" height="15" rx="3" fill="#CBD5E1"></rect>
+
+    <rect x="745" y="355" width="65" height="15" rx="3" fill="#CBD5E1"></rect>
+
+    <rect x="745" y="385" width="75" height="15" rx="3" fill="#CBD5E1"></rect>
+  </g>
+
+  <!-- Laptop Base -->
+  <g filter="url(#shadow)">
+    <path d="M220 560 L980 560 L1060 620 L140 620 Z" fill="#CBD5E1"></path>
+
+    <rect x="520" y="580" width="160" height="15" rx="7" fill="#94A3B8"></rect>
+  </g>
+
+  <!-- Floating Elements -->
+  <g filter="url(#shadow)">
+    <circle cx="250" cy="250" r="45" fill="url(#accent)"></circle>
+    <text x="228" y="260" font-size="34" fill="white" font-family="Arial">{ }</text>
+
+    <circle cx="960" cy="310" r="50" fill="#38BDF8"></circle>
+    <text x="942" y="322" font-size="32" fill="white" font-family="Arial">&lt;/&gt;</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="735" text-anchor="middle" font-size="48" font-weight="700" fill="#0F172A" font-family="Arial, Helvetica, sans-serif">
+    Website Development
+  </text>
+
+  <text x="600" y="770" text-anchor="middle" font-size="20" fill="#64748B" font-family="Arial, Helvetica, sans-serif">
+    Modern Responsive Web Solutions
+  </text>
+</svg>

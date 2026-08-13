@@ -1,0 +1,97 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"></stop>
+      <stop offset="100%" stop-color="#1e293b"></stop>
+    </linearGradient>
+
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"></stop>
+      <stop offset="100%" stop-color="#06b6d4"></stop>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.25"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"></rect>
+
+  <!-- Browser Window -->
+  <rect x="100" y="60" width="1000" height="580" rx="20" fill="#ffffff" filter="url(#shadow)"></rect>
+
+  <!-- Browser Header -->
+  <rect x="100" y="60" width="1000" height="60" rx="20" fill="#e5e7eb"></rect>
+  <rect x="100" y="100" width="1000" height="20" fill="#e5e7eb"></rect>
+
+  <!-- Browser Buttons -->
+  <circle cx="140" cy="90" r="8" fill="#ef4444"></circle>
+  <circle cx="170" cy="90" r="8" fill="#f59e0b"></circle>
+  <circle cx="200" cy="90" r="8" fill="#22c55e"></circle>
+
+  <!-- Address Bar -->
+  <rect x="260" y="75" width="550" height="30" rx="15" fill="#ffffff"></rect>
+  <text x="280" y="95" font-family="Arial" font-size="14" fill="#64748b">
+    https://your-web-app.com
+  </text>
+
+  <!-- Sidebar -->
+  <rect x="100" y="120" width="220" height="520" fill="#f8fafc"></rect>
+  <rect x="120" y="150" width="180" height="50" rx="10" fill="url(#card)"></rect>
+  <text x="150" y="182" font-family="Arial" font-size="20" fill="white" font-weight="bold">
+    WebApp
+  </text>
+
+  <!-- Menu Items -->
+  <rect x="120" y="240" width="160" height="12" rx="6" fill="#cbd5e1"></rect>
+  <rect x="120" y="280" width="140" height="12" rx="6" fill="#cbd5e1"></rect>
+  <rect x="120" y="320" width="170" height="12" rx="6" fill="#cbd5e1"></rect>
+  <rect x="120" y="360" width="130" height="12" rx="6" fill="#cbd5e1"></rect>
+  <rect x="120" y="400" width="150" height="12" rx="6" fill="#cbd5e1"></rect>
+
+  <!-- Main Content -->
+  <rect x="360" y="150" width="680" height="120" rx="16" fill="url(#card)"></rect>
+
+  <text x="400" y="205" font-family="Arial" font-size="36" fill="white" font-weight="bold">
+    Modern Web Application
+  </text>
+
+  <text x="400" y="240" font-family="Arial" font-size="18" fill="white">
+    Dashboard • Analytics • Cloud Ready
+  </text>
+
+  <!-- Stats Cards -->
+  <rect x="360" y="310" width="200" height="120" rx="15" fill="#f8fafc" stroke="#e2e8f0"></rect>
+
+  <rect x="600" y="310" width="200" height="120" rx="15" fill="#f8fafc" stroke="#e2e8f0"></rect>
+
+  <rect x="840" y="310" width="200" height="120" rx="15" fill="#f8fafc" stroke="#e2e8f0"></rect>
+
+  <text x="420" y="360" font-family="Arial" font-size="30" fill="#2563eb" font-weight="bold">
+    12K
+  </text>
+
+  <text x="655" y="360" font-family="Arial" font-size="30" fill="#06b6d4" font-weight="bold">
+    98%
+  </text>
+
+  <text x="900" y="360" font-family="Arial" font-size="30" fill="#22c55e" font-weight="bold">
+    1.2M
+  </text>
+
+  <!-- Chart Area -->
+  <rect x="360" y="470" width="680" height="130" rx="15" fill="#f8fafc" stroke="#e2e8f0"></rect>
+
+  <!-- Chart Lines -->
+  <polyline points="390,560 470,530 550,545 630,500 710,515 790,470 870,490 950,450" fill="none" stroke="#2563eb" stroke-width="5"></polyline>
+
+  <circle cx="390" cy="560" r="5" fill="#2563eb"></circle>
+  <circle cx="470" cy="530" r="5" fill="#2563eb"></circle>
+  <circle cx="550" cy="545" r="5" fill="#2563eb"></circle>
+  <circle cx="630" cy="500" r="5" fill="#2563eb"></circle>
+  <circle cx="710" cy="515" r="5" fill="#2563eb"></circle>
+  <circle cx="790" cy="470" r="5" fill="#2563eb"></circle>
+  <circle cx="870" cy="490" r="5" fill="#2563eb"></circle>
+  <circle cx="950" cy="450" r="5" fill="#2563eb"></circle>
+</svg>

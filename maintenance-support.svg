@@ -1,0 +1,82 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"></stop>
+      <stop offset="100%" stop-color="#1E3A8A"></stop>
+    </linearGradient>
+
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"></stop>
+      <stop offset="100%" stop-color="#2563EB"></stop>
+    </linearGradient>
+
+    <linearGradient id="wrenchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"></stop>
+      <stop offset="100%" stop-color="#EA580C"></stop>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.35"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+
+  <!-- Decorative circles -->
+  <circle cx="120" cy="100" r="60" fill="#ffffff" opacity="0.05"></circle>
+  <circle cx="700" cy="500" r="90" fill="#ffffff" opacity="0.05"></circle>
+
+  <!-- Main gear -->
+  <g transform="translate(400,250)" filter="url(#shadow)">
+    <g fill="url(#gearGrad)">
+      <rect x="-18" y="-120" width="36" height="40" rx="4"></rect>
+      <rect x="-18" y="80" width="36" height="40" rx="4"></rect>
+      <rect x="-120" y="-18" width="40" height="36" rx="4"></rect>
+      <rect x="80" y="-18" width="40" height="36" rx="4"></rect>
+
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(45)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(90)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(135)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(180)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(225)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(270)"></rect>
+      <rect x="-18" y="-120" width="36" height="40" rx="4" transform="rotate(315)"></rect>
+
+      <circle r="90"></circle>
+      <circle r="42" fill="#0F172A"></circle>
+    </g>
+  </g>
+
+  <!-- Wrench -->
+  <g transform="translate(520,340) rotate(-25)" filter="url(#shadow)">
+    <path d="
+      M -20 -90
+      A 35 35 0 0 1 20 -90
+      L 5 -60
+      A 15 15 0 0 0 -5 -60
+      Z" fill="url(#wrenchGrad)"></path>
+
+    <rect x="-12" y="-60" width="24" height="150" rx="12" fill="url(#wrenchGrad)"></rect>
+
+    <circle cx="0" cy="70" r="12" fill="#0F172A"></circle>
+  </g>
+
+  <!-- Support icon -->
+  <g transform="translate(180,320)" filter="url(#shadow)">
+    <circle cx="0" cy="-40" r="35" fill="#E5E7EB"></circle>
+    <path d="M -55 40 Q 0 -10 55 40 L 55 90 L -55 90 Z" fill="#E5E7EB"></path>
+
+    <path d="M -40 -30 Q 0 -70 40 -30" stroke="#22C55E" stroke-width="10" fill="none" stroke-linecap="round"></path>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="500" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+    Maintenance &amp; Support
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="545" font-family="Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#CBD5E1">
+    Reliable Technical Assistance • Monitoring • Updates
+  </text>
+</svg>

@@ -1,0 +1,76 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"></stop>
+      <stop offset="100%" stop-color="#1E3A8A"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F97316"></stop>
+      <stop offset="100%" stop-color="#3B82F6"></stop>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.25"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"></rect>
+
+  <!-- Decorative circles -->
+  <circle cx="140" cy="120" r="80" fill="#3B82F6" opacity="0.12"></circle>
+  <circle cx="1050" cy="560" r="120" fill="#F97316" opacity="0.10"></circle>
+
+  <!-- Title -->
+  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="white">
+    SOFTWARE SOLUTIONS
+  </text>
+
+  <text x="600" y="130" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#CBD5E1">
+    Web Development • Automation • Cloud • Cybersecurity • AI
+  </text>
+
+  <!-- Central Hub -->
+  <circle cx="600" cy="360" r="95" fill="url(#accent)" filter="url(#shadow)"></circle>
+  <text x="600" y="350" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="white">
+    Software
+  </text>
+  <text x="600" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="white">
+    Solutions
+  </text>
+
+  <!-- Connecting Lines -->
+  <line x1="600" y1="265" x2="600" y2="185" stroke="#94A3B8" stroke-width="3"></line>
+  <line x1="505" y1="360" x2="350" y2="360" stroke="#94A3B8" stroke-width="3"></line>
+  <line x1="695" y1="360" x2="850" y2="360" stroke="#94A3B8" stroke-width="3"></line>
+  <line x1="600" y1="455" x2="600" y2="535" stroke="#94A3B8" stroke-width="3"></line>
+
+  <!-- Top Card -->
+  <rect x="500" y="80" width="200" height="100" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+  <text x="600" y="120" text-anchor="middle" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#1E293B">🌐</text>
+  <text x="600" y="150" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#1E293B">Web Development</text>
+
+  <!-- Left Card -->
+  <rect x="130" y="300" width="220" height="120" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+  <text x="240" y="340" text-anchor="middle" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#1E293B">⚙️</text>
+  <text x="240" y="370" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#1E293B">Automation</text>
+  <text x="240" y="395" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#64748B">Workflow &amp; Process Optimization</text>
+
+  <!-- Right Card -->
+  <rect x="850" y="300" width="220" height="120" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+  <text x="960" y="340" text-anchor="middle" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#1E293B">☁️</text>
+  <text x="960" y="370" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#1E293B">Cloud Solutions</text>
+  <text x="960" y="395" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#64748B">Scalable &amp; Secure Infrastructure</text>
+
+  <!-- Bottom Card -->
+  <rect x="470" y="535" width="260" height="120" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+  <text x="600" y="575" text-anchor="middle" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#1E293B">🔒</text>
+  <text x="600" y="605" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" font-weight="600" fill="#1E293B">Cybersecurity &amp; AI</text>
+  <text x="600" y="630" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#64748B">Protection, Analytics &amp; Intelligence</text>
+
+  <!-- Footer -->
+  <text x="600" y="685" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#CBD5E1">
+    Innovative Technology • Reliable Solutions • Digital Transformation
+  </text>
+</svg>
