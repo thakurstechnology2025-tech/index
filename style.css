@@ -2,6 +2,43 @@
 /* GLOBAL RESET */
 /* ============================= */
 
+.section.glass{
+    max-width:1000px;
+    margin:80px auto;
+    padding:40px;
+}
+
+.section.glass h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.section.glass h2{
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.section.glass ul{
+    margin-left:20px;
+    line-height:2;
+}
+
+.section.glass button{
+    margin-top:30px;
+    padding:12px 25px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    font-size:16px;
+}
+
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -379,11 +416,7 @@ button {
 .reveal-right.active {
   opacity: 1;
   transform: translateX(0);
-
 }
-
-
-
 
 /* ============================= */
 /* DATE SECTION */
