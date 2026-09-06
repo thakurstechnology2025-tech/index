@@ -243,6 +243,249 @@ body {
   box-shadow: 0 0 20px var(--primary);
 }
 
+
+
+/* ============================= */
+/* LEADERSHIP SECTION */
+/* ============================= */
+
+.leadership-section {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-section h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px var(--primary);
+}
+
+.leadership-intro {
+  max-width: 750px;
+  margin: 0 auto 70px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* ============================= */
+/* LEADER ROW */
+/* ============================= */
+
+.leader-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 80px 0;
+  padding: 35px;
+  background: var(--glass-bg);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+  transition: 0.4s ease;
+}
+
+.leader-row:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+  border-color: rgba(0, 255, 255, 0.4);
+}
+
+
+/* Reverse second leader */
+
+.leader-row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* ============================= */
+/* LEADER PROFILE */
+/* ============================= */
+
+.leader-profile {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.leader-image-wrapper {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    transparent,
+    var(--primary)
+  );
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.4),
+    0 0 35px rgba(0, 255, 255, 0.15);
+  transition: 0.4s ease;
+}
+
+.leader-image-wrapper:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.7),
+    0 0 45px rgba(0, 255, 255, 0.25);
+}
+
+.leader-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background: #020617;
+}
+
+
+/* ============================= */
+/* LEADER NAME & POSITION */
+/* ============================= */
+
+.leader-info h3 {
+  font-size: clamp(22px, 3vw, 30px);
+  margin-bottom: 8px;
+  text-shadow: 0 0 10px var(--primary);
+}
+
+.leader-info span {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+/* ============================= */
+/* LEADER BIO */
+/* ============================= */
+
+.leader-bio {
+  flex: 1.4;
+  text-align: left;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+  border-left: 2px solid var(--primary);
+  box-shadow: inset 0 0 20px rgba(0, 255, 255, 0.03);
+}
+
+.leader-row-reverse .leader-bio {
+  border-left: none;
+  border-right: 2px solid var(--primary);
+}
+
+.leader-bio-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.leader-bio h3 {
+  font-size: clamp(22px, 3vw, 32px);
+  margin-bottom: 20px;
+}
+
+.leader-bio p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.leader-bio p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .leader-row,
+  .leader-row-reverse {
+    flex-direction: column;
+    gap: 35px;
+    padding: 30px;
+  }
+
+  .leader-profile {
+    width: 100%;
+  }
+
+  .leader-bio,
+  .leader-row-reverse .leader-bio {
+    width: 100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid var(--primary);
+    padding: 30px 20px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  .leadership-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .leadership-intro {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .leader-row,
+  .leader-row-reverse {
+    margin: 50px 0;
+    padding: 22px 15px;
+    border-radius: 20px;
+  }
+
+  .leader-image-wrapper {
+    width: 210px;
+    height: 210px;
+  }
+
+  .leader-bio {
+    padding: 25px 10px;
+  }
+
+  .leader-bio p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+}
+
+
 /* ============================= */
 /* CONTACT */
 /* ============================= */
